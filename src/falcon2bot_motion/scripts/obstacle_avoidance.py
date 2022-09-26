@@ -78,5 +78,6 @@ def main():
     sub = rospy.Subscriber('/falconbot2/laser/scan', LaserScan, clbk_laser)    
     rospy.spin()
 
-if __name__ == "__main_":
+
+if __name__ == '__main__':
     main()
