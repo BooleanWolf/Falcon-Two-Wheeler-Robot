@@ -73,7 +73,7 @@ def clbk_laser(msg):
 def main():
     global pub
 
-    rospy.init_node('reading_laser')    
+    rospy.init_node('obstacle_avoidance')    
     pub = rospy.Publisher('/cmd_vel', Twist, queue_size=1)    
-    sub = rospy.Subscriber('/m2wr/laser/scan', LaserScan, clbk_laser)    
+    sub = rospy.Subscriber('/falconbot2/laser/scan', LaserScan, clbk_laser)    
     rospy.spin()
