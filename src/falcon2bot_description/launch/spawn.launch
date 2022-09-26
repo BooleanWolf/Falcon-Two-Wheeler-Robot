@@ -15,7 +15,7 @@
         <arg name="yaw" default="0"/>
     
     <!-- World File -->
-        <arg name="world_file" default="$(find falcon2bot_description)/worlds/empty.world"/>
+        <arg name="world_file" default="$(find falcon2bot_description)/worlds/maze.world"/>
 
     
      <!-- Launch Gazebo World -->
