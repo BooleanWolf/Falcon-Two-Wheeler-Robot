@@ -77,3 +77,6 @@ def main():
     pub = rospy.Publisher('/cmd_vel', Twist, queue_size=1)    
     sub = rospy.Subscriber('/falconbot2/laser/scan', LaserScan, clbk_laser)    
     rospy.spin()
+
+if __name__ == "__main_":
+    main()
